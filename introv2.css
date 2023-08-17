@@ -1,0 +1,22 @@
+h1 {
+    font-size: 40px;
+    font-family: 'sans-serif';
+}
+h2{
+    font-size: 40px;
+    font-family: 'Courier New';
+}
+h3 {
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+}
+.enc{
+    font-family: fantasy;
+    font-size: 25px;
+    color: orangered;
+}
+.cont{
+    color: blue;
+    background-color: yellowgreen;
+    font-family: 'Times New Roman';
+}
