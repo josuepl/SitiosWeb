@@ -7,8 +7,17 @@ h2{
     font-family: 'Courier New';
 }
 h3 {
-    font-size: 20px;
+    font-size: 40px;
     font-family: 'Lucida Sans';
+}
+h4{
+    font-size: 40px;
+}
+h5{
+    font-size: 40px;
+}
+h6{
+    font-size: 40px;
 }
 .enc{
     font-family: fantasy;
@@ -16,7 +25,7 @@ h3 {
     color: orangered;
 }
 .cont{
-    color: blue;
-    background-color: yellowgreen;
+    color: whitesmoke;
+    background-color: black;
     font-family: 'Times New Roman';
 }

@@ -1,0 +1,39 @@
+/*
+*/
+
+*{
+  background-color:#0C7699; 
+}
+header{
+    width: 100%;
+    color:rgba(240, 231, 231, .9);
+    border: solid black 2px;
+    text-align: center;
+}
+#banner{
+    font: 2em sans-serif;
+}
+#contenido{
+    width: 80%;
+    display: inline-block;
+}
+#principal{
+    width: 95%;
+    display: inline-block;
+}
+#menuHori{
+    text-align: center;
+    background-color: cornflowerblue;
+    color: azure;
+}
+#menuHori li{
+    display: inline;
+}
+#menuVert{
+    width: 10%;
+    display: inline-block;
+}
+#aside{
+    display: inline-block;
+    width: 8%;
+}
