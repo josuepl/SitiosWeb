@@ -1,0 +1,36 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: .5fr .25fr 4fr .25fr;
+    grid-gap: 1px;
+}
+.elem-1{
+    grid-column: 1 / 5;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.elem-2{
+    grid-column: 1 / 5;
+    background-color: darkolivegreen;
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+}
+.elem-3{
+        grid-row: 3 / 5;
+        background-color: darkred;
+        color: white;
+        text-align: center;
+        font-size: 1vw;
+
+}
+.elem-9{
+    grid-column: 1 / 5;
+    background-color: darkmagenta;
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+}
