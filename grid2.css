@@ -1,0 +1,49 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-rows: .5fr .3fr 2.5fr .3fr;
+    grid-template-areas: "Banner Banner Banner Banner"
+                         "Nav Nav Nav Nav"
+                         "Aside Contenido Contenido Contenido"
+                         "Aside Contenido Contenido Contenido"
+                         "Aside Contenido Contenido Contenido"
+                         "Footer Footer Footer Footer";
+    grid-gap: 1px;
+}
+.elem-1{
+    grid-area: Banner;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.elem-2{
+    grid-area: Nav;
+    background-color: darkolivegreen;
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+}
+.elem-3{
+    grid-area: Aside;
+        background-color: darkred;
+        color: white;
+        text-align: center;
+        font-size: 1vw;
+
+}
+.elem-4{
+    grid-area: Contenido;
+        background-color: darkred;
+        color: white;
+        text-align: center;
+        font-size: 1vw;
+
+}
+.elem-9{
+    grid-area: Footer;
+    background-color: darkmagenta;
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+}
