@@ -47,3 +47,56 @@
     text-align: center;
     font-size: 1vw;
 }
+@media only screen and (max-width: 1080px) {
+    *{
+        font-size: 3vw;
+    }
+    .contenedor-grid{
+        display: grid;
+        grid-template-rows: .3fr .1fr 2.5fr .2fr;
+        grid-template-areas: "Banner Banner Banner Banner"
+                             "Nav Nav Nav Nav"
+                             "Contenido Contenido Contenido Aside"
+                             "Contenido Contenido Contenido Aside"
+                             "Contenido Contenido Contenido Aside"
+                             "Footer Footer Footer Footer";
+        grid-gap: 1px;
+    }
+    .elem-1{
+        background-color: black;
+        color: white;
+
+    }
+    .elem-3{
+        background-color: darkslategray;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        font-size: 3vw;
+    }
+    .contenedor-grid{
+        display: grid;
+        /*grid-template-rows: 1fr 20px 2.5fr .2fr;*/
+        grid-template-areas: "Banner Banner Banner Banner"
+                             "Nav Nav Nav Nav"
+                             "Contenido Contenido Contenido Contenido"
+                             "Contenido Contenido Contenido Contenido"
+                             "Contenido Contenido Contenido Contenido"
+                             "Footer Footer Footer Footer";
+        grid-gap: 1px;
+    }
+    .elem-1{
+        background-color: black;
+        color: white;
+    }
+    .elem-2:hover{
+        border: yellow solid 3px;
+color: black;
+    }
+    .elem-3{
+        display: none;
+    }
+}
+
