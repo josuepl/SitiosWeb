@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        *{
+            font-size: 2vw;
+            padding: 5px;
+            margin: 5px;
+        }
+        body{
+            display: inline-flex;
+        }
+        input{
+            width: 95%;
+        }
+        input[type=radio]{
+            width: 25%;
+        }
+        form{
+            width: 25%;
+            border: black solid 3px;
+        }
+        label{
+            width: 95%;
+        }
+    #calc input[type=button]{
+        width: 27%;
+    }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="nombre">Nombre:</label> <input type="text"  name ="nombre"id="nombre">
+        <label for="edad">Edad:</label> <input type="text" name="edad" id="edad">
+        <label for="genero">Genero:</label> <input type="radio" name = "gen"class="gen">H<input type="radio" name="gen"> M
+        <label for="color">Color:</label> <input type="color" name="color" id="color">
+        <label for="fecha">Fecha:</label> <input type="date" name="date" id="date">
+        <input type="button" value="ok" onclick='datosC()'>
+        <script>
+            function datosC(){
+                let nombre = document.getElementById('nombre');
+                let cad = nombre.value;
+                console.log(cad)
+                document.getElementById('pnom').innerHTML = nombre.value;
+            }
+        </script>
+    </form>
+    <form action="#" id="calc">
+        <input type="text" name="entrada" id="entrada">
+        <input type="button" id="7" value="7" onclick='ingresaD(value)'>
+        <input type="button" value="8" onclick='ingresaD(value)'>
+        <input type="button" value="9" onclick='ingresaD(value)'>
+        <input type="button" value="4" onclick='ingresaD(value)'>
+        <input type="button" value="5" onclick='ingresaD(value)'>
+        <input type="button" value="6" onclick='ingresaD(value)'>
+        <input type="button" value="1" onclick='ingresaD(value)'>
+        <input type="button" value="2" onclick='ingresaD(value)'>
+        <input type="button" value="3" onclick='ingresaD(value)'>
+        <input type="button" value="0" onclick='ingresaD(value)'>        
+    </form>
+     <script>
+        let entrada = document.getElementById('entrada');
+        let txt;
+        function ingresaD(value){
+            let val = value.toString();
+            txt = val.toString();
+            txt = txt + val;
+            console.log(txt);
+            entrada.innerHTML = txt;
+        }
+     </script>
+    <p id="pnom"></p>
+</body>
+</html>
