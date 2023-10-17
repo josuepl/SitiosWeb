@@ -9,34 +9,33 @@
 </head>
 <body>
     <div id="container">
-        <form action="#">
-            <input type="text" id="entrada">
-            <div id="linea1">
-            <input type="button" value="7" id="btn7">
-            <input type="button" value="8" id="btn8">
-            <input type="button" value="9" id="btn9">
-            <input type="button" value="+" id="sum">
-            </div>
-            <div id="linea2">
-            <input type="button" value="4" id="btn4">
-            <input type="button" value="5" id="btn5">
-            <input type="button" value="6" id="btn6">
-            <input type="button" value="-" id="res">
-            </div>
-            <div id="linea3">
-                <input type="button" value="1" id="btn1">
-                <input type="button" value="2" id="btn2">
-                <input type="button" value="3" id="btn3">
-                <input type="button" value="+" id="mul">
-            </div>
-            <div id="linea4">
-                <input type="button" value="=" id="btni">
-                <input type="button" value="0" id="btn0">
-                <input type="button" value="CE" id="btncl">
-                <input type="button" value="/" id="div">
-            </div>
-
+        <form action="#" style="grid-area: entra;">
+            <input type="text" id="entrada" style="width: 100%;">
         </form>
+        <div id="linea1">
+        <input type="button" value="7" id="btn7" onclick="agrega(value)">
+        <input type="button" value="8" id="btn8" onclick="agrega(value)">
+        <input type="button" value="9" id="btn9" onclick="agrega(value)">
+        <input type="button" value="+" id="sum" onclick="agrega(value)">
+        </div>
+        <div id="linea2">
+        <input type="button" value="4" id="btn4" onclick="agrega(value)">
+        <input type="button" value="5" id="btn5" onclick="agrega(value)">
+        <input type="button" value="6" id="btn6" onclick="agrega(value)">
+        <input type="button" value="-" id="res" onclick="agrega(value)">
+        </div>
+        <div id="linea3">
+            <input type="button" value="1" id="btn1" onclick="agrega(value)">
+            <input type="button" value="2" id="btn2" onclick="agrega(value)">
+            <input type="button" value="3" id="btn3" onclick="agrega(value)">
+            <input type="button" value="+" id="mul" onclick="agrega(value)">
+        </div>
+        <div id="linea4">
+            <input type="button" value="=" id="btni" onclick="igual()"> 
+            <input type="button" value="0" id="btn0" onclick="agrega(value)">
+            <input type="button" value="CE" id="btncl">
+            <input type="button" value="/" id="div" onclick="agrega(value)">
+        </div>
     </div>
 </body>
 </html>

@@ -6,20 +6,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 'entrada entrada entrada entrada'
-                         'btn7 btn8 btn9'
-                         'btn4 btn5 btn6'
-                         'btn1 btn2 btn3'
-                         'btni btn0 btncl';
+    grid-template-areas: 'entra entra entra entra'
+                         'linea1 linea1 linea1 linea1'
+                         'linea2 linea2 linea2 linea2'
+                         'linea3 linea3 linea3 linea3'
+                         'linea4 linea4 linea4 linea4';
     gap: 5px;
 
 }
+#linea1{
+    grid-area: linea1;
+}
+#linea2{
+    grid-area: linea2;
+}
+#linea3{
+    grid-area: linea3;
+}
+#linea4{
+    grid-area: linea4;
+}
+
 #entrada{
     grid-area: entrada;
     
 }
+
 #btn1{
-    grid-area: "btn1";
+    grid-area: btn1;
 }
 #btn2{
 
@@ -54,4 +68,13 @@
 }
 #btncl{
     grid-area: btncl;
+}
+#sum{
+    grid-area: sum;
+}
+#res{
+    grid-area: res;
+}
+#div{
+    grid-area: div;
 }
